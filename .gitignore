@@ -1,0 +1,34 @@
+# Claude Code
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Raw personal data — must never be committed (chat backups, exports, etc.)
+data/raw/
+*chat*backup*
+*.sqlite3
+*.db
+
+# Model checkpoints / training artifacts
+checkpoints/
+*.pt
+*.pth
+runs/
+wandb/
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+data/*
