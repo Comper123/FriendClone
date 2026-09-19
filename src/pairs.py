@@ -31,3 +31,11 @@ def format_pair(pair, friend_id):
         msg += item["text"]
         prompt.append(msg)
     return "\n".join(prompt), pair["reply"]
+
+
+def split_pairs(pairs, val_fraction):
+    n_val = int(len(pairs) * val_fraction)
+    split_at = len(pairs) - n_val
+    train_pairs = pairs[:split_at]
+    val_pairs = pairs[split_at:]
+    return train_pairs, val_pairs     
