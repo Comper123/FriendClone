@@ -32,3 +32,5 @@ wandb/
 Thumbs.db
 
 data/*
+
+.vscode/*
